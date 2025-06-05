@@ -11,7 +11,7 @@
       font-family: 'Open Sans', sans-serif;
       color: #333;
       background: url('https://i.imgur.com/odjCFsI.png') center/cover no-repeat;
-      background-attachment: fixed;
+      
     }
 
     header {
@@ -116,6 +116,9 @@
       justify-content: space-between;
       gap: 20px;
     }
+      section h2 {
+      text-align: center;
+    }
 
     .package {
       background-color: white;
@@ -124,6 +127,21 @@
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
       flex: 1 1 calc(20% - 20px);
       box-sizing: border-box;
+    }
+        .package:nth-child(1) {
+      background-color: #fde2e4;
+    }
+    .package:nth-child(2) {
+      background-color: #ffc9de;
+    }
+    .package:nth-child(3) {
+      background-color: #ffe0ac;
+    }
+    .package:nth-child(4) {
+      background-color: #d9f6d6;
+    }
+    .package:nth-child(5) {
+      background-color: #d0e1f9;
     }
 
     .package h3 {
@@ -138,6 +156,25 @@
     nav li ul li:nth-child(6) a::before { content: '✍️ '; }
     nav li ul li:nth-child(7) a::before { content: '💁 '; }
     nav li ul li:nth-child(8) a::before { content: '⭐ '; }
+      .book-btn {
+    background-color: #007bff;
+    border-radius: 4px;
+    color: white;
+    padding: 10px 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    border: none;
+    margin: 10px auto 0 auto;
+    text-align: center;
+  }
+  .book-btn:hover {
+    background-color: rgba(0,0,0,0.05);
+  }
+  
   </style>
   <script>
     document.addEventListener('DOMContentLoaded', function() {
@@ -186,48 +223,56 @@
   </header>
 
   <main>
-    <section id="about">
+    <section id="about" style="background-color: #f7f4ed; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
       <h2>About Amazing Braids</h2>
       <p>At Amazing Braids, we believe in the art of braiding. Our team of experienced stylists brings years of expertise to every appointment, ensuring that each braid is a masterpiece. From classic styles to intricate designs, we specialize in transforming your hair into a work of art.</p>
     </section>
-
-<section id="service-packages">
+    
+    <section id="Our Mission" style="background-color: #f7f4ed; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+      <h2>Our Mission</h2>
+      <p>At Amazing Braids, we believe in the art of braiding. Our team of experienced stylists brings years of expertise to every appointment, ensuring that each braid is a masterpiece. From classic styles to intricate designs, we specialize in transforming your hair into a work of art.</p>
+    </section>
+        <section id="Core Values" style="background-color: #f7f4ed; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+      <h2>Core Values & Principles</h2>
+      <p>At Amazing Braids, we believe in the art of braiding. Our team of experienced stylists brings years of expertise to every appointment, ensuring that each braid is a masterpiece. From classic styles to intricate designs, we specialize in transforming your hair into a work of art.</p>
+    </section>
+<section id="service-packages" style="background-color: #f0f9f0; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
   <h2>Service Packages</h2>
   <div class="package-container">
     <div class="package">
       <h3>🥉 Bronze Package – $60</h3>
       <p>✅ 2–4 Feed-Ins<br>✅ Cornrows (basic)<br>✅ Braid Downs (prep for wigs/weaves)<br>✅ Shampoo + Dry Oil Scalp<br>❌ Freestyle Braids<br>❌ Twists (basic and medium-sized)<br>❌ Box Braids<br>❌ Knotless Braids<br>❌ Kinky Twists<br>❌ Updos (special occasions)<br>❌ Protective Styles (layered or detailed)<br>❌ Re-Twist Locs<br>❌ Tribal Braids (simple or detailed)<br>❌ Juicy Twists<br>❌ Kinky & Juicy Combo<br>❌ Crochet Styles<br>❌ Sew-Ins<br>❌ Braid Accessories Add-On<br>❌ Edge Styling<br>❌ Braid Touch-Ups</p>
-      <button class="book-btn" onclick="window.location.href='#book'">📅 Book Appointment</button>
+      <button class="book-btn" onclick="window.location.href='#book'">Book Appointment</button>
     </div>
     <div class="package">
       <h3>🥈 Silver Package – $100</h3>
       <p>✅ 2–4 Feed-Ins<br>✅ Cornrows (basic)<br>✅ Braid Downs (prep for wigs/weaves)<br>✅ Shampoo + Dry Oil Scalp<br>✅ Freestyle Braids (simple)<br>✅ Twists (basic and medium-sized)<br>✅ Box Braids (short–medium)<br>✅ Kinky Twists<br>✅ Protective Styles (basic)<br>✅ Re-Twist Locs<br>❌ Knotless Braids<br>❌ Updos (special occasions)<br>❌ Tribal Braids (simple or detailed)<br>❌ Juicy Twists<br>❌ Kinky & Juicy Combo<br>❌ Crochet Styles<br>❌ Sew-Ins<br>❌ Braid Accessories Add-On<br>❌ Edge Styling<br>❌ Braid Touch-Ups</p>
-      <button class="book-btn" onclick="window.location.href='#book'">📅 Book Appointment</button>
+      <button class="book-btn" onclick="window.location.href='#book'">Book Appointment</button>
     </div>
     <div class="package">
-      <h3>🥇 Gold Package – $150</h3>
+      <h3>🥇 Gold Package – $160</h3>
       <p>✅ 2–4 Feed-Ins<br>✅ Cornrows (basic)<br>✅ Braid Downs (prep for wigs/weaves)<br>✅ Shampoo + Dry Oil Scalp<br>✅ Freestyle Braids (simple or detailed)<br>✅ Twists (basic and medium-sized)<br>✅ Box Braids (short–medium)<br>✅ Kinky Twists<br>✅ Protective Styles (layered and detailed)<br>✅ Re-Twist Locs<br>✅ Knotless Braids (short–medium)<br>✅ Updos (special occasions)<br>✅ Tribal Braids (simple designs)<br>✅ Juicy Twists<br>✅ Kinky & Juicy Combo<br>✅ Crochet Styles (short–medium)<br>❌ Sew-Ins<br>❌ Braid Accessories Add-On<br>❌ Edge Styling<br>❌ Braid Touch-Ups</p>
-      <button class="book-btn" onclick="window.location.href='#book'">📅 Book Appointment</button>
+      <button class="book-btn" onclick="window.location.href='#book'">Book Appointment</button>
     </div>
     <div class="package">
-      <h3>💎 Platinum Package – $200</h3>
+      <h3>💎 Platinum Package – $220</h3>
       <p>✅ 2–4 Feed-Ins<br>✅ Cornrows (basic)<br>✅ Braid Downs (prep for wigs/weaves)<br>✅ Shampoo + Dry Oil Scalp<br>✅ Freestyle Braids (detailed)<br>✅ Twists (basic and medium-sized)<br>✅ Box Braids (short–medium)<br>✅ Kinky Twists<br>✅ Protective Styles (layered and detailed)<br>✅ Re-Twist Locs<br>✅ Knotless Braids (short–medium)<br>✅ Updos (special occasions)<br>✅ Tribal Braids (detailed)<br>✅ Juicy Twists<br>✅ Kinky & Juicy Combo<br>✅ Crochet Styles (full head)<br>✅ Sew-Ins (partial, minimal leave-out)<br>✅ Braid Accessories Add-On<br>✅ Edge Styling<br>✅ Braid Touch-Ups</p>
-      <button class="book-btn" onclick="window.location.href='#book'">📅 Book Appointment</button>
+      <button class="book-btn" onclick="window.location.href='#book'">Book Appointment</button>
     </div>
     <div class="package">
-      <h3>💎 Diamond Package – $250+</h3>
+      <h3>💎 Diamond Package – $320</h3>
       <p>✅ 2–4 Feed-Ins<br>✅ Cornrows (basic)<br>✅ Braid Downs (prep for wigs/weaves)<br>✅ Shampoo + Dry Oil Scalp<br>✅ Freestyle Braids (custom, detailed)<br>✅ Twists (basic, medium, and custom)<br>✅ Box Braids (short–medium)<br>✅ Kinky Twists<br>✅ Protective Styles (layered and detailed)<br>✅ Re-Twist Locs<br>✅ Knotless Braids (short–long)<br>✅ Updos (formal and special occasions)<br>✅ Tribal Braids (detailed, culturally inspired)<br>✅ Juicy Twists<br>✅ Kinky & Juicy Combo<br>✅ Crochet Styles (full head)<br>✅ Sew-Ins (full or partial, with closure/frontal)<br>✅ Braid Accessories Add-On (premium)<br>✅ Edge Styling<br>✅ Braid Touch-Ups</p>
-      <button class="book-btn" onclick="window.location.href='#book'">📅 Book Appointment</button>
+      <button class="book-btn" onclick="window.location.href='#book'">Book Appointment</button>
     </div>
   </div>
 </section>
 
-    <section id="portfolio">
-      <h2>Our Portfolio</h2>
+  <section id="Stylists" style="background-color: #f9f0f9; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+      <h2>Our Stylists</h2>
       <p>Explore our portfolio to see the latest styles, creative designs, and happy clients. Every braid tells a story, and we can't wait to share it with you.</p>
     </section>
 
-    <section id="contact">
+  <section id="contact" style="background-color: #f9f9f0; padding: 20px; border-radius: 8px;">
       <h2>Contact Us</h2>
       <p>Ready to get started? Contact us today to schedule your appointment. We look forward to helping you achieve your perfect look!</p>
     </section>
